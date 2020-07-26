@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="CryptoAppUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CryptoAppUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Content="Encrypt" x:Name="EncryptButton" Click="EncryptButton_Click"/>
+        <Button Grid.Row="1" Content="Decrypt" x:Name="DecryptButton" Click="DecryptButton_Click"/>
+        <Button Grid.Row="2" Content="App Settings" x:Name="SettingsButton" Click="SettingsButton_Click"/>
+    </Grid>
+</Page>
